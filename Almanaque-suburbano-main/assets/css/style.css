@@ -1,0 +1,178 @@
+html {
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-image: url('../img/carton.png');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.todaslasfotos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.miniaturas-y-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+#recutsosimagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+#recutsosimagenes img.planta {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#recutsosimagenes img.planta:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+#descripcion {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    min-width: 250px;
+}
+
+#descripcion img {
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#descripcion h3 {
+    margin-top: 0;
+}
+
+.tarjeta-planta {
+    background-color: #8b4513;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+.imagen-planta img {
+    max-width: 200px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.nombre-planta {
+    font-size: 22px;
+    color: #ffd700; 
+    margin: 5px 0;
+}
+
+.detalle-planta {
+    background-color: #ffdab9;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+}
+
+.detalle-planta .habilidad {
+    color: #0000cd;
+    font-weight: bold;
+}
+
+.detalle-planta .stats span {
+    color: red;
+}
+
+.detalle-planta .info {
+    margin: 8px 0;
+    color: #444;
+    font-style: italic;
+}
+
+.detalle-planta .extras {
+    margin-top: 10px;
+}
+
+.detalle-planta .costo {
+    color: red;
+    font-weight: bold;
+}
+
+.detalle-planta .recarga {
+    color: red; 
+    font-weight: bold;
+}
+
+#toggleBtn {
+    margin: 10px 0;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #14c714;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#toggleBtn:hover {
+    background-color: #069606;
+}
+.encabezado {
+    background-color: #8b4513;
+    color: #fff8dc;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #654321;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 20px 20px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffd700;
+    text-shadow: 2px 2px #000;
+    font-family: 'Luckiest Guy', sans-serif;
+}
+.pie-pagina {
+    background-color: #8b4513;
+    color: #fff8dc;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 14px;
+    border-top: 4px solid #654321;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: auto;
+}
